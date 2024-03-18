@@ -19,7 +19,6 @@ st.title('Iris Dataset Exploratory Data Analysis')
 # Sidebar
 st.sidebar.title('Customize Visualization')
 selected_feature = st.sidebar.selectbox('Select feature for analysis', iris.feature_names)
-selected_target = st.sidebar.selectbox('Select target for analysis', target_names)
 
 # Main content
 st.write('## Overview of Iris Dataset')
