@@ -4,6 +4,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 
+# Turn off warnings
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 # Load Iris dataset
 iris = load_iris()
 iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
